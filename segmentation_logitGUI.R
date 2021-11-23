@@ -80,7 +80,7 @@ D=NULL
 bk=FG="y"
 plot(im)
 p=recordPlot()
-
+library(EBImage)
 if(is.matrix(TargetPixels)){
   im2=im
 im2@.Data[,,1][(TargetPixels==0)|isFALSE(TargetPixels)]=0
